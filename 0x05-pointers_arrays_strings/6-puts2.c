@@ -1,6 +1,6 @@
 /*
- * File: 6-puts2.c
- * Auth: Brennan D Baraban
+ * Task: 6-puts.c
+ * Author :Megersa Oljira
  */
 
 #include "main.h"
