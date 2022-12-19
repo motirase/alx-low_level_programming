@@ -1,23 +1,23 @@
+/*
+ * File: 4-print_rev.c
+ * Auth: Brennan D Baraban
+ */
+
 #include "main.h"
+
 /**
- * print_rev - print reverse order
- * @s: a pointer parameter
- * Return: void method
+ * print_rev - Prints a string in reverse.
+ * @s: The string to be printed.
  */
 void print_rev(char *s)
 {
-	int i;
+	int len = 0, index;
 
-	i = 0;
-	while (s[i] != '\0')
-	{
-		i++;
-	}
+	while (s[index++])
+		len++;
 
-	for (i = i - 1; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
+	for (index = len - 1; index >= 0; index--)
+		_putchar(s[index]);
 
 	_putchar('\n');
 }
