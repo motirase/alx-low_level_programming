@@ -1,6 +1,6 @@
 /*
- * File: 8-print_array.c
- * Auth: Brennan D Baraban
+ * Task: 8-print_array.c
+ * Author: Megersa Oljira
  */
 
 #include "main.h"
