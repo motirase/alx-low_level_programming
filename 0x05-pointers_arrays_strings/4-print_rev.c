@@ -1,3 +1,8 @@
+/*
+ * Task: 3-puts.c
+ * Author :Megersa Oljira
+ */
+
 #include "main.h"
 /**
  * print_rev - print reverse order
