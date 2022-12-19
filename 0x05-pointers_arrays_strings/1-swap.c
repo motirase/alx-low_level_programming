@@ -1,6 +1,6 @@
 /*
- *File: 1-swap.c
- *Auth: Brennan D Baraban
+ *Task: 1-swap.c
+ *Author: Megersa Oljira
  */
 #include "main.h"
 
