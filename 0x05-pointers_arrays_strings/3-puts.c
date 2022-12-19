@@ -1,6 +1,6 @@
 /*
- * File: 3-puts.c
- * Auth: Brennan D Baraban
+ * Task: 3-puts.c
+ * Author :Megersa Oljira
  */
 
 #include "main.h"
