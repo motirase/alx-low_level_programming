@@ -1,27 +1,22 @@
-/*
- * task 9-strcpy.c
- * Author: Megersa Oljira
- */
-
 #include "main.h"
-
 /**
- * _strcpy - Copies a string pointed to by @src, including the
- *           terminating null byte, to a buffer pointed to by @dest.
- * @dest: A buffer to copy the string to.
- * @src: The source string to copy.
- *
- * Return: A pointer to the destination string @dest.
- */
-char *_strcpy(char *dest, const char *src)
+* _strcpy - function to copy string
+* @dest: destination of copied string
+* @src: source of the string
+* Return: destination
+*/
+char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
+int i;
 
-	while (src[index])
-	{
-		dest[index] = src[index];
-		index++;
-	}
+i = 0;
 
-	return (dest);
+while (src[i] != '\0')
+{
+dest[i] = src[i];
+i++;
+}
+dest[i] = '\0';
+
+return (dest);
 }
