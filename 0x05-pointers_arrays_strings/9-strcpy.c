@@ -1,6 +1,6 @@
 /*
- * File: 9-strcpy.c
- * Auth: Brennan D Baraban
+ * task 9-strcpy.c
+ * Author: Megersa Oljira
  */
 
 #include "main.h"
