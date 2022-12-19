@@ -1,19 +1,18 @@
-#include "main.h"
+/*
+ * File: 3-puts.c
+ * Auth: Brennan D Baraban
+ */
+
+#include "holberton.h"
+
 /**
- * _puts - print a string
- * @str: a pointer to int
- * Return: void method
+ * _puts - Prints a string to stdout.
+ * @str: The string to be printed.
  */
 void _puts(char *str)
 {
-	char *c;
-	int m;
+	while (*str)
+		_putchar(*str++);
 
-	c = str;
-
-	for (m = 0; c[m]; m++)
-	{
-		_putchar (c[m]);
-	}
 	_putchar('\n');
 }
