@@ -1,6 +1,6 @@
 /*
- * File: 0-reset_to_98.c
- * Auth: Brennan D Baraban
+ *task 0-reset_to_98.c
+ * Author: Megersa Oljira
  */
 
 #include "main.h"
