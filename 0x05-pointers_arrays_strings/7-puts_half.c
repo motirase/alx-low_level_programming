@@ -1,6 +1,6 @@
 /*
- * File: 7-puts_half.c
- * Auth: Brennan D Baraban
+ * Task: 7-puts_half.c
+ * Author: Megersa Oljira
  */
 
 #include "main.h"
