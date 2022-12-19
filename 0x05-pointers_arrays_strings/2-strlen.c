@@ -1,6 +1,6 @@
 /*
- *File: 2-strlen.c
- *Auth: Brennan D Baraban
+ *Task: 2-strlen.c
+ *Author: Megersa Oljira
  */
 #include "main.h"
 
