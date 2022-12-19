@@ -1,6 +1,6 @@
 /*
- *File: 5-rev_string.c
- *Auth: Brennan D Baraban
+ * Task: 5-rev_strings
+ * Author :Megersa Oljira
  */
 
 #include "main.h"
