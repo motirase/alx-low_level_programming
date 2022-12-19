@@ -1,6 +1,6 @@
 /*
- * File: 100-atoi.c
- * Auth: Brennan D Baraban
+ *100-atoi.c
+ * Author: Megersa Oljira
  */
 
 #include "main.h"
