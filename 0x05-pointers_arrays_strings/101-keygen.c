@@ -1,6 +1,6 @@
 /*
- * File: 101-keygen.c
- * Auth: Brennan D Baraban
+ *my file
+ *Author: Megersa Oljira
  */
 
 #include <stdio.h>
