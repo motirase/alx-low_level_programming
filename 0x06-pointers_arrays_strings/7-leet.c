@@ -1,27 +1,33 @@
 #include "main.h"
+
 /**
- * leet - change vowels to numbers.
- * @s: analized string.
- *
- * Return: String with all vowels changed.
- */
+  * leet - Encodes a string into 1337
+  * @s: The string to encode
+  *
+  * Return: The encoded string
+  */
 char *leet(char *s)
 {
-	char a[] = "aeotlAEOTL";
-	char n[] = "4307143071";
-	int i = 0;
-	int j;
+	int a = 0, b = 0, l = 5;
+	char r[5] = {'A', 'E', 'O', 'T', 'L'};
+	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (*(s + i) != '\0')
+	while (s[a])
 	{
-		for (j = 0; j <= 9; j++)
+		b = 0;
+
+		while (b < l)
 		{
-			if (*(s + i) == a[j])
+			if (s[a] == r[b] || s[a] - 32 == r[b])
 			{
-				*(s + i) = n[j];
+				s[a] = n[b];
 			}
+
+			b++;
 		}
-		i++;
+
+		a++;
 	}
+
 	return (s);
 }

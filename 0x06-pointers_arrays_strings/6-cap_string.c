@@ -1,36 +1,31 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * cap_string - capitalizes most of the words in a string.
- * @s: analized string.
- *
- * Return: String with all words capitalized.
+ * cap_string - capitalize each word
+ * @s: the parameter in the form of input
+ * Return: character to be returned
  */
+
 char *cap_string(char *s)
 {
-	int i, j;
-	int a[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	int a = 0, i;
+	int cspc = 13;
+	char spc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	i = 0;
-	while (*(s + i) != '\0')
+	while (s[a])
 	{
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		i = 0;
+
+		while (i < cspc)
 		{
-			if (i == 0)
-			{
-				*(s + i) = *(s + i) - 32;
-			}
-			else
-			{
-				for (j = 0; j <= 12; j++)
-				{
-					if (a[j] == *(s + i - 1))
-					{
-						*(s + i) = *(s + i) - 32;
-					}
-				}
-			}
+			if ((a == 0 || s[a - 1] == spc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
 		}
-	i++;
+
+		a++;
 	}
+
 	return (s);
 }

@@ -1,28 +1,32 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * rot13 - change letters to ROT13.
- * @s: analized string.
- *
- * Return: String with all letters in ROT13 base.
- */
+  * rot13 - ...
+  * @s: ...
+  *
+  * Return: ...
+  */
 char *rot13(char *s)
 {
-	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	int i = 0;
-	int j;
+	int a = 0;
 
-	while (*(s + i) != '\0')
+	while (s[a])
 	{
-		for (j = 0; j <= 51; j++)
+		while ((s[a] >= 'a' && s[a] <= 'z') || (s[a] >= 'A' && s[a] <= 'Z'))
 		{
-			if (*(s + i) == a[j])
+			if ((s[a] > 'm' && s[a] <= 'z') || (s[a] > 'M' && s[a] <= 'Z'))
 			{
-				*(s + i) = rot[j];
+				s[a] -= 13;
 				break;
 			}
+
+			s[a] += 13;
+			break;
 		}
-		i++;
+
+		a++;
 	}
+
 	return (s);
 }
