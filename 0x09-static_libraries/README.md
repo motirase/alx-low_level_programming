@@ -1,8 +1,12 @@
-0. A library is not a luxury but one of the necessities of life
-the static library libholberton.a containing all the functions listed
+# Static libraries
 
-1. Without libraries what have we? We have no past and no future
-script called create_static_lib.sh that creates a static library called liball.a 
-from all the .c files that are in the current directory.
+The aim of this is to learn about static libraries in **C language**.
 
-2. Either write something worth reading or do something worth writing
+## Files
+All of the following files are programs written in C:
+
+| Filename | Description |
+| -------- | ----------- |
+| `libmy.a` | Static library that contains a lot of functions |
+| `create_static_lib.sh` | Script that creates a static library called `liball.a` from all the `.c` files that are in the current directory |
+| `main.h` |Header file that contains all the prototypes of the used functions |

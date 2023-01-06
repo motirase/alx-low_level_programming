@@ -1,16 +1,17 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
- * _puts - Check if a number is greater than 0
- * @str: The number to be checked
+ * _puts - A function that prints a string folloed by a new line.
+ * @str: input string
+ * Return: no return
  */
 void _puts(char *str)
 {
-	int i;
+	int count;
 
-	for (i = 0; *str != '\0'; i++)
+	for (count = 0; str[count] != '\0'; count++)
 	{
-		_putchar(*str);
-		str++;
+		_putchar(str[count]);
 	}
 	_putchar('\n');
 }
