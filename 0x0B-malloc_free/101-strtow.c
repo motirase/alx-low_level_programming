@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * isSpace - determines if character is a space or not
  * @c: input char
  * Return: 1 if true or 0 or not
  */
+
 int isSpace(char c)
 {
 	return (c == ' ');
@@ -19,11 +19,13 @@ int isSpace(char c)
  * @index: starting index
  * Return: index of first non-space char
  */
+
 int startIndex(char *s, int index)
 {
 
 	while (isSpace(*(s + index)))
 		index++;
+	
 	return (index);
 }
 
@@ -33,6 +35,7 @@ int startIndex(char *s, int index)
  * @index: starting index
  * Return: index of last index of non-space char
  */
+
 int endIndex(char *s, int index)
 {
 	while (!isSpace(*(s + index)))
@@ -45,6 +48,7 @@ int endIndex(char *s, int index)
  * @s: input string
  * Return: number of words
  */
+
 int countWords(char *s)
 {
 	int wordOn = 0;
@@ -61,6 +65,7 @@ int countWords(char *s)
 		}
 		s++;
 	}
+	
 	return (words);
 }
 
@@ -69,6 +74,7 @@ int countWords(char *s)
  * @str: string of words to be split
  * Return: double pointer to strings
  */
+
 char **strtow(char *str)
 {
 	char **ptr;
@@ -103,5 +109,6 @@ char **strtow(char *str)
 		j = end + 1;
 	}
 	ptr[i] = NULL;
+	
 	return (ptr);
 }
